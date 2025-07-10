@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Bug Form</title></head>
+<body>
+    <h2>Submit a Bug</h2>
+    <form action="/submitbug" method="post">
+        <textarea name="description" placeholder="Bug description" required></textarea><br>
+        <button type="submit">Submit Bug</button>
+    </form>
+</body>
+</html>
