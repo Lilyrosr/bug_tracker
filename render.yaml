@@ -1,0 +1,13 @@
+services:  
+"  - type: web"  
+"    name: bug-tracker-app"  
+"    env: docker"  
+"    plan: free"  
+"    branch: main"  
+"    region: oregon"  
+"    dockerContext: ."  
+"    dockerfilePath: ./Dockerfile"  
+"    healthCheckPath: /"  
+"    envVars:"  
+"      - key: SPRING_PROFILES_ACTIVE"  
+"        value: prod" 
